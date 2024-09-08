@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Jack Plowman's Tech Radar: a tool to visualize technology understanding to inspire and support tech choices on future projects"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jack Plowman's Tech Radar</title>
+    <link
+      rel="shortcut icon"
+      href="https://avatars.githubusercontent.com/u/62281988?v=4&size=64"
+    />
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://zalando.github.io/tech-radar/release/radar-0.8.js"></script>
+
+    <link rel="stylesheet" href="radar.css" />
+  </head>
+
+  <svg id="radar"></svg>
+
+  <body>
+    <script>
+      fetch("./config.json")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          radar_visualization({
+            repo_url: "https://github.com/JackPlowman/tech-radar",
+            title: "Jack Plowman's Tech Radar",
+            date: data.date,
+            svg_id: "radar",
+            width: 1450,
+            height: 1000,
+            scale: 1.0,
+            colors: {
+              background: "#fff",
+              grid: "#bbb",
+              inactive: "#ddd",
+            },
+            font_family: "Arial, Helvetica",
+            quadrants: [
+              { name: "Bottom Right" },
+              { name: "Bottom Left" },
+              { name: "Top Left" },
+              { name: "Top Right" },
+            ],
+            rings: [
+              { name: "INNER", color: "#5ba300" },
+              { name: "SECOND", color: "#009eb0" },
+              { name: "THIRD", color: "#c7ba00" },
+              { name: "OUTER", color: "#e09b96" },
+            ],
+            print_layout: true,
+            links_in_new_tabs: true,
+            entries: data.entries,
+          });
+        })
+        .catch(function (err) {
+          console.log("Error loading config.json", err);
+        });
+    </script>
+  </body>
+</html>

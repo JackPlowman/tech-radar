@@ -25,3 +25,7 @@ git-hooks:
   - any:
       - changed-files:
           - any-glob-to-any-file: ["githooks/**"]
+radar:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file: ["github-pages/**"]
