@@ -29,3 +29,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           LINTER_RULES_PATH: .github/super-linter-configurations
           YAML_ERROR_ON_WARNING: true
+
+  check-justfile-format:
+    name: Check Justfile Format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Just
+        uses: extractions/setup-just@v2
+
+      - name: Check Justfile Format
+        run: just format-check
