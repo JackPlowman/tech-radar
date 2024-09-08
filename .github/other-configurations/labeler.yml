@@ -8,22 +8,6 @@ dependencies:
       - changed-files:
           - any-glob-to-any-file: ["**/poetry.lock", "package-lock.json"]
       - head-branch: ["^dependabot"]
-python:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["*.py", "**/*.py"]
-python-tests:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["**/tests/*.py"]
-typescript:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["*.ts", "**/*.ts", "**/tsconfig.json"]
-typescript-tests:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["**/tests/*.ts"]
 just:
   - any:
       - changed-files:
@@ -37,18 +21,6 @@ github_actions:
       - changed-files:
           - any-glob-to-any-file:
               [".github/workflows/*", ".github/workflows/**/*"]
-end-to-end-tests:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["testing/**"]
-analyser:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["analyser/**"]
-dashboard:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ["dashboard/**"]
 git-hooks:
   - any:
       - changed-files:
