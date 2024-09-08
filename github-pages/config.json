@@ -1,4 +1,40 @@
 {
   "date": "2024.09",
-  "entries": []
+  "entries": [
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Python",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Go",
+      "active": true,
+      "moved": 1
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "TypeScript",
+      "active": true,
+      "moved": 1
+    },
+    {
+      "quadrant": 2,
+      "ring": 3,
+      "label": "JavaScript",
+      "active": true,
+      "moved": -1
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Terraform",
+      "active": true,
+      "moved": 0
+    }
+  ]
 }
