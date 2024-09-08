@@ -1,0 +1,26 @@
+name: "Pull Request Checks"
+
+on:
+  pull_request:
+    types:
+      [
+        opened,
+        edited,
+        unlocked,
+        labeled,
+        synchronize,
+        reopened,
+        ready_for_review,
+      ]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  labeller:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          configuration-path: .github/other-configurations/labeler.yml
