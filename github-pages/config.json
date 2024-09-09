@@ -182,6 +182,34 @@
       "label": "Jenkins",
       "active": true,
       "moved": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Scrum",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Kanban",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Microservices",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Serverless",
+      "active": true,
+      "moved": 0
     }
   ]
 }
