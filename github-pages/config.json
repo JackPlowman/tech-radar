@@ -17,7 +17,7 @@
     },
     {
       "quadrant": 2,
-      "ring": 2,
+      "ring": 1,
       "label": "TypeScript",
       "active": true,
       "moved": 1
@@ -33,6 +33,27 @@
       "quadrant": 2,
       "ring": 0,
       "label": "Terraform",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "React",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Astro",
+      "active": true,
+      "moved": 1
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "NextJS",
       "active": true,
       "moved": 0
     },
