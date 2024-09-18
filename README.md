@@ -2,7 +2,7 @@
 
 This is my tech radar used to map out technologies, tools, techniques, and platforms that I'm currently using, exploring, or interested in learning more about. The goal is to visualize and prioritize where you are focusing your energy, learning, and development in relation to technology.
 
-This tech radar is inspired by the [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar) and the [Zalando Tech Radar](https://engineering.zalando.com/tags/tech-radar.html).
+This tech radar is inspired by the [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar) and the [Zalando Tech Radar](https://opensource.zalando.com/tech-radar).
 
 ## Table of Contents
 
