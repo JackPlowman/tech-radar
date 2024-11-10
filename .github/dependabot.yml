@@ -6,3 +6,7 @@ updates:
     schedule:
       interval: "daily"
     target-branch: "main"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
