@@ -39,9 +39,12 @@
 - color: 00ff44
   name: shell
   description: Pull requests that update Shell code
+- color: 1900ff
+  name: markdown
+  description: Pull requests that update Markdown documentation
 # Components
 - color: ff0073
-  name: git-hooks
+  name: git_hooks
   description: Pull requests that update git hooks
 - color: ebff36
   name: radar
