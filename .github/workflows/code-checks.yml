@@ -21,6 +21,7 @@ jobs:
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Lint Code Base
         uses: super-linter/super-linter/slim@v7.2.1
         env:
@@ -38,6 +39,7 @@ jobs:
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Check Markdown links
         uses: UmbrellaDocs/action-linkspector@v1.2.4
         with:
@@ -55,6 +57,7 @@ jobs:
         uses: actions/checkout@v4.2.2
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Set up Just
         uses: extractions/setup-just@v2
       - name: Check Justfile Format
@@ -95,7 +98,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v4.0.0
+        uses: SonarSource/sonarqube-scan-action@v4.2.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
