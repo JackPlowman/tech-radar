@@ -26,18 +26,19 @@
 
     <script>
       // Theme management
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-      const storedTheme = localStorage.getItem('theme');
-      const isDarkMode = storedTheme === 'dark' || (!storedTheme && prefersDark.matches);
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+      const storedTheme = localStorage.getItem("theme");
+      const isDarkMode =
+        storedTheme === "dark" || (!storedTheme && prefersDark.matches);
 
       function setTheme(isDark) {
-        document.body.classList.toggle('dark-mode', isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        document.body.classList.toggle("dark-mode", isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
         initializeRadar(isDark);
       }
 
-      document.getElementById('theme-toggle').addEventListener('click', () => {
-        setTheme(!document.body.classList.contains('dark-mode'));
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        setTheme(!document.body.classList.contains("dark-mode"));
       });
 
       // Radar initialization
@@ -47,17 +48,19 @@
             return response.json();
           })
           .then(function (data) {
-            const colors = isDark ? {
-              background: "#121212",
-              grid: "#333",
-              inactive: "#666"
-            } : {
-              background: "#fff",
-              grid: "#bbb",
-              inactive: "#ddd"
-            };
+            const colors = isDark
+              ? {
+                  background: "#121212",
+                  grid: "#333",
+                  inactive: "#666",
+                }
+              : {
+                  background: "#fff",
+                  grid: "#bbb",
+                  inactive: "#ddd",
+                };
 
-            document.getElementById('radar').innerHTML = '';
+            document.getElementById("radar").innerHTML = "";
             radar_visualization({
               repo_url: "https://github.com/JackPlowman/tech-radar",
               title: "Jack Plowman's Tech Radar",
