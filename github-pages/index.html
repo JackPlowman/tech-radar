@@ -17,52 +17,83 @@
     <script src="https://zalando.github.io/tech-radar/release/radar-0.8.js"></script>
 
     <link rel="stylesheet" href="radar.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
   </head>
 
-  <svg id="radar"></svg>
-
   <body>
+    <button id="theme-toggle">Toggle Theme</button>
+    <svg id="radar"></svg>
+
     <script>
-      fetch("./config.json")
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          radar_visualization({
-            repo_url: "https://github.com/JackPlowman/tech-radar",
-            title: "Jack Plowman's Tech Radar",
-            date: data.date,
-            svg_id: "radar",
-            width: 1450,
-            height: 1000,
-            scale: 1.0,
-            colors: {
+      // Theme management
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const storedTheme = localStorage.getItem('theme');
+      const isDarkMode = storedTheme === 'dark' || (!storedTheme && prefersDark.matches);
+
+      function setTheme(isDark) {
+        document.body.classList.toggle('dark-mode', isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        initializeRadar(isDark);
+      }
+
+      document.getElementById('theme-toggle').addEventListener('click', () => {
+        setTheme(!document.body.classList.contains('dark-mode'));
+      });
+
+      // Radar initialization
+      function initializeRadar(isDark) {
+        fetch("./config.json")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            const colors = isDark ? {
+              background: "#121212",
+              grid: "#333",
+              inactive: "#666"
+            } : {
               background: "#fff",
               grid: "#bbb",
-              inactive: "#ddd",
-            },
-            font_family: "Arial, Helvetica",
-            quadrants: [
-              { name: "Tools:" },
-              { name: "Platforms & Cloud Services:" },
-              { name: "Languages & Frameworks:" },
-              { name: "Techniques & Methodologies:" },
-            ],
-            rings: [
-              { name: "EXPERIENCED", color: "#5ba300" },
-              { name: "TRIAL", color: "#009eb0" },
-              { name: "WATCH", color: "#c7ba00" },
-              { name: "MAINTAIN", color: "#e09b96" },
-            ],
-            print_layout: true,
-            links_in_new_tabs: true,
-            entries: data.entries,
+              inactive: "#ddd"
+            };
+
+            document.getElementById('radar').innerHTML = '';
+            radar_visualization({
+              repo_url: "https://github.com/JackPlowman/tech-radar",
+              title: "Jack Plowman's Tech Radar",
+              date: data.date,
+              svg_id: "radar",
+              width: 1450,
+              height: 1000,
+              scale: 1.0,
+              colors: colors,
+              font_family: "Arial, Helvetica",
+              quadrants: [
+                { name: "Tools:" },
+                { name: "Platforms & Cloud Services:" },
+                { name: "Languages & Frameworks:" },
+                { name: "Techniques & Methodologies:" },
+              ],
+              rings: [
+                { name: "EXPERIENCED", color: "#5ba300" },
+                { name: "TRIAL", color: "#009eb0" },
+                { name: "WATCH", color: "#c7ba00" },
+                { name: "MAINTAIN", color: "#e09b96" },
+              ],
+              print_layout: true,
+              links_in_new_tabs: true,
+              entries: data.entries,
+            });
+          })
+          .catch(function (err) {
+            console.log("Error loading config.json", err);
           });
-        })
-        .catch(function (err) {
-          console.log("Error loading config.json", err);
-        });
+      }
+
+      // Initial setup
+      setTheme(isDarkMode);
     </script>
+
     <table>
       <tbody>
         <tr>

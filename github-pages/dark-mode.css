@@ -1,0 +1,67 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode h3 {
+  color: #bb86fc;
+}
+
+body.dark-mode table {
+  border-color: #333;
+}
+
+body.dark-mode td {
+  border-color: #333;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #666;
+  background: #fff;
+  cursor: pointer;
+}
+
+body.dark-mode #theme-toggle {
+  background: #333;
+  color: #fff;
+  border-color: #888;
+}
+
+body.dark-mode #radar text,
+body.dark-mode #radar tspan {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .quadrant-group text {
+  fill: #ffffff !important;
+}
+
+body.dark-mode .legend text {
+  fill: #ffffff !important;
+}
+
+body.dark-mode .blip-link text {
+  fill: #ffffff !important;
+}
+
+body.dark-mode .line-text {
+  fill: #ffffff !important;
+}
+
+body.dark-mode #radar text {
+  fill: #ffffff !important;
+}
+
+body.dark-mode #radar .legend {
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
