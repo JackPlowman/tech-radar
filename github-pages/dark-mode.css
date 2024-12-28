@@ -32,36 +32,6 @@ body.dark-mode #theme-toggle {
   border-color: #888;
 }
 
-body.dark-mode #radar text,
-body.dark-mode #radar tspan {
-  fill: #ffffff !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .quadrant-group text {
-  fill: #ffffff !important;
-}
-
-body.dark-mode .legend text {
-  fill: #ffffff !important;
-}
-
-body.dark-mode .blip-link text {
-  fill: #ffffff !important;
-}
-
-body.dark-mode .line-text {
-  fill: #ffffff !important;
-}
-
-body.dark-mode #radar text {
-  fill: #ffffff !important;
-}
-
-body.dark-mode #radar .legend {
-  color: #ffffff;
-}
-
-body.dark-mode a {
-  color: #bb86fc;
+body.dark-mode text {
+  fill: #ffffff;
 }
