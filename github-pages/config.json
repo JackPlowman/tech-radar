@@ -34,6 +34,13 @@
       "ring": 1,
       "label": "Go",
       "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Rust",
+      "active": true,
       "moved": 1
     },
     {
@@ -41,19 +48,19 @@
       "ring": 1,
       "label": "TypeScript",
       "active": true,
-      "moved": 1
+      "moved": 0
     },
     {
       "quadrant": 2,
       "ring": 3,
       "label": "JavaScript",
       "active": true,
-      "moved": -1
+      "moved": 0
     },
     {
       "quadrant": 2,
       "ring": 0,
-      "label": "Terraform",
+      "label": "Terraform/OpenTofu",
       "active": true,
       "moved": 0
     },
@@ -87,10 +94,24 @@
     },
     {
       "quadrant": 2,
+      "ring": 2,
+      "label": "Tanstack",
+      "active": true,
+      "moved": 1
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Vite/Rolldown",
+      "active": true,
+      "moved": 1
+    },
+    {
+      "quadrant": 2,
       "ring": 1,
       "label": "NextJS",
       "active": true,
-      "moved": 1
+      "moved": 0
     },
     {
       "quadrant": 1,
@@ -166,6 +187,13 @@
       "quadrant": 1,
       "ring": 0,
       "label": "GitHub Actions",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "GitHub Pages",
       "active": true,
       "moved": 0
     },
