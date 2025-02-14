@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e +x
 
-gitleaks detect --source .
+echo "Running pre-commit hooks"
+gitleaks detect --source . -q
 just prettier-format
 just format-check
