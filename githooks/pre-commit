@@ -2,7 +2,7 @@
 set -e +x
 
 echo "Running pre-commit hooks checks"
-gitleaks detect --source . -q
-just prettier-format
-just format-check
+gitleaks detect --source . >/dev/null
+just -q prettier-format
+just -q format-check
 echo "pre-commit hooks checks passed"
