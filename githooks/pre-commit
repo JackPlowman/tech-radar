@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e +x
 
-echo "Running pre-commit hooks"
+echo "Running pre-commit hooks checks"
 gitleaks detect --source . -q
 just prettier-format
 just format-check
+echo "pre-commit hooks checks passed"
