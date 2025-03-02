@@ -55,7 +55,7 @@
 - color: ff0073
   name: git_hooks
   description: Pull requests that update git hooks
- color: ebff36
+- color: ebff36
   name: radar
   description: Pull requests that update the Tech Radar
 # Sizes
