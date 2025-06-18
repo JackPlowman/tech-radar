@@ -18,6 +18,7 @@ def test_title(page: Page) -> None:
     # Assert
     assert page.title() == "Jack Plowman's Tech Radar"
 
+
 def test_theme_toggle(page: Page) -> None:
     """Test the theme toggle functionality."""
     # Act
