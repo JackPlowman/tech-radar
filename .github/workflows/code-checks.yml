@@ -12,6 +12,9 @@ permissions:
   contents: read
   packages: read
 
+env:
+  FORCE_COLOR: 1
+
 jobs:
   check-code-quality:
     name: Check Code Quality
@@ -64,7 +67,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Set up dependencies
-        uses: ./.github/actions/setup-dependencies
+        uses: ./.github/actions/setup-tests-dependencies
       - name: Generate Ruff Sarif
         run: just ruff-lint-check
         env:
@@ -91,7 +94,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Set up dependencies
-        uses: ./.github/actions/setup-dependencies
+        uses: ./.github/actions/setup-tests-dependencies
       - name: Check Python Code Format (Ruff)
         run: just ruff-format-check
         env:
@@ -107,7 +110,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Set up dependencies
-        uses: ./.github/actions/setup-dependencies
+        uses: ./.github/actions/setup-tests-dependencies
       - name: Check Python Code Types (ty) Checks
         run: just ty-check
 
@@ -124,7 +127,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Set up dependencies
-        uses: ./.github/actions/setup-dependencies
+        uses: ./.github/actions/setup-tests-dependencies
       - name: Check Python Code for Dead Code (Vulture)
         run: just vulture
 
@@ -141,7 +144,7 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Set up dependencies
-        uses: ./.github/actions/setup-dependencies
+        uses: ./.github/actions/setup-tests-dependencies
       - name: Check UV Lockfile
         run: just uv-lock-check
 
