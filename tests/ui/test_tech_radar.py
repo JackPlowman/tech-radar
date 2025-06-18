@@ -17,3 +17,14 @@ def test_title(page: Page) -> None:
     page.goto(PROJECT_URL)
     # Assert
     assert page.title() == "Jack Plowman's Tech Radar"
+
+def test_theme_toggle(page: Page) -> None:
+    """Test the theme toggle functionality."""
+    # Act
+    page.goto(PROJECT_URL)
+    # Assert
+    assert page.locator("button#theme-toggle").is_visible()
+    # Click the theme toggle button
+    page.locator("button#theme-toggle").click()
+    # Assert the theme has changed
+    assert page.locator("body").get_attribute("class") == "dark-mode"
