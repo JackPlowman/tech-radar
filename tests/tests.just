@@ -1,6 +1,8 @@
+export DEFAULT_PROJECT_URL := "https://jackplowman.github.io/tech-radar/"
+
 # ------------------------------------------------------------------------------
 # General Commands
-# ------------------------------------------------------------------------------
+# -------------------------------------x-----------------------------------------
 
 # Install All Python Dependencies
 install:
@@ -32,10 +34,6 @@ clean:
       -name 'coverage.xml' -o \
       -name 'db.sqlite3' \
     \) -print | xargs rm -rfv
-
-# Validate uv locked
-uv-lock-check:
-    uv lock --check
 
 # ------------------------------------------------------------------------------
 # Ruff - Python Linting and Formatting
@@ -79,5 +77,6 @@ ty-check:
 # Other Python Tools
 # ------------------------------------------------------------------------------
 
+# Check uv lockfile
 uv-lock-check:
     uv lock --check
