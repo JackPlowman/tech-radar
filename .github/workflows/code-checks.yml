@@ -69,7 +69,7 @@ jobs:
       - name: Set up dependencies
         uses: ./.github/actions/setup-tests-dependencies
       - name: Generate Ruff Sarif
-        run: just ruff-lint-check
+        run: just tests::ruff-lint-check
         env:
           RUFF_OUTPUT_FORMAT: "sarif"
           RUFF_OUTPUT_FILE: "ruff-results.sarif"
