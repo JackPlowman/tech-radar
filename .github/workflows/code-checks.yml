@@ -85,7 +85,7 @@ jobs:
           RUFF_OUTPUT_FORMAT: "github"
 
   run-python-tests-format-checks:
-    name: Run Python tests Format Checks
+    name: Run Python Tests Format Checks
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
