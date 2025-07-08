@@ -1,3 +1,4 @@
+from collections.abc import Callable
 from logging import getLogger
 from os import getenv
 
@@ -36,17 +37,21 @@ def test_theme_toggle(page: Page, project_url: str) -> None:
     # Assert the theme has changed
     assert page.locator("body").get_attribute("class") == "dark-mode"
 
-def test_normal_snapshot(page: Page, assert_snapshot) -> None:
+
+def test_normal_snapshot(
+    page: Page, project_url: str, assert_snapshot: Callable
+) -> None:
     """Test the page snapshot in normal mode."""
     # Act
-    page.goto(PROJECT_URL)
+    page.goto(project_url)
     # Assert
     assert_snapshot(page)
 
-def test_dark_snapshot(page: Page, assert_snapshot) -> None:
+
+def test_dark_snapshot(page: Page, project_url: str, assert_snapshot: Callable) -> None:
     """Test the page snapshot in dark mode."""
     # Act
-    page.goto(PROJECT_URL)
+    page.goto(project_url)
     # Click the theme toggle button to switch to dark mode
     page.locator("button#theme-toggle").click()
     # Assert
