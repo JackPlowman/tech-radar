@@ -42,6 +42,8 @@ def test_normal_snapshot(
     page: Page, project_url: str, assert_snapshot: Callable
 ) -> None:
     """Test the page snapshot in normal mode."""
+    # Arrange
+    page.set_viewport_size({"width": 1920, "height": 1080})
     # Act
     page.goto(project_url)
     # Assert
@@ -50,6 +52,8 @@ def test_normal_snapshot(
 
 def test_dark_snapshot(page: Page, project_url: str, assert_snapshot: Callable) -> None:
     """Test the page snapshot in dark mode."""
+    # Arrange
+    page.set_viewport_size({"width": 1920, "height": 1080})
     # Act
     page.goto(project_url)
     # Click the theme toggle button to switch to dark mode
