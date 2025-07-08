@@ -68,6 +68,11 @@ jobs:
         run: just tests::run-ci "$BROWSER"
         env:
           BROWSER: ${{ matrix.browser }}
+      - name: Upload Playwright Failures
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: playwright-failures
+          path: tests\snapshot_failures
 
   link-tests:
     name: Link Tests
