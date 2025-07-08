@@ -35,3 +35,19 @@ def test_theme_toggle(page: Page, project_url: str) -> None:
     page.locator("button#theme-toggle").click()
     # Assert the theme has changed
     assert page.locator("body").get_attribute("class") == "dark-mode"
+
+def test_normal_snapshot(page: Page, assert_snapshot) -> None:
+    """Test the page snapshot in normal mode."""
+    # Act
+    page.goto(PROJECT_URL)
+    # Assert
+    assert_snapshot(page)
+
+def test_dark_snapshot(page: Page, assert_snapshot) -> None:
+    """Test the page snapshot in dark mode."""
+    # Act
+    page.goto(PROJECT_URL)
+    # Click the theme toggle button to switch to dark mode
+    page.locator("button#theme-toggle").click()
+    # Assert
+    assert_snapshot(page)
