@@ -1,28 +1,34 @@
 from logging import getLogger
 from os import getenv
 
+import pytest
 from playwright.sync_api import Page
 
 logger = getLogger(__name__)
 
-PROJECT_URL = getenv("PROJECT_URL")
-if not PROJECT_URL:
-    msg = "The environment variable 'PROJECT_URL' is not set. "
-    raise ValueError(msg)
+
+@pytest.fixture
+def project_url() -> str:
+    """Fixture to provide the project URL."""
+    url = getenv("PROJECT_URL")
+    if not url:
+        msg = "The environment variable 'PROJECT_URL' is not set. "
+        raise ValueError(msg)
+    return url
 
 
-def test_title(page: Page) -> None:
+def test_title(page: Page, project_url: str) -> None:
     """Test the page title."""
     # Act
-    page.goto(PROJECT_URL)
+    page.goto(project_url)
     # Assert
     assert page.title() == "Jack Plowman's Tech Radar"
 
 
-def test_theme_toggle(page: Page) -> None:
+def test_theme_toggle(page: Page, project_url: str) -> None:
     """Test the theme toggle functionality."""
     # Act
-    page.goto(PROJECT_URL)
+    page.goto(project_url)
     # Assert
     assert page.locator("button#theme-toggle").is_visible()
     # Click the theme toggle button
