@@ -171,5 +171,7 @@ jobs:
         uses: ./.github/actions/setup-tests-dependencies
       - name: Copy config to schema validation directory
         run: cp github-pages/config.json tests/schema_validation
+      - name: LS
+        run: ls -la tests/schema_validation
       - name: Validate Config against schema
         run: just tests::validate-schema
