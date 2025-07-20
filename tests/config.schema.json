@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/JackPlowman/tech-radar/main/github-pages/config.schema.json",
+  "title": "Tech Radar Configuration",
+  "description": "JSON Schema for Tech Radar configuration file that defines technologies, tools, techniques, and platforms plotted on a radar visualization",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "description": "The date/version of this tech radar snapshot",
+      "pattern": "^\\d{4}\\.\\d{2}$",
+      "examples": ["2025.07", "2024.12"]
+    },
+    "entries": {
+      "type": "array",
+      "description": "Array of technology entries to be plotted on the radar",
+      "items": {
+        "$ref": "#/$defs/radarEntry"
+      },
+      "minItems": 1
+    }
+  },
+  "required": ["date", "entries"],
+  "additionalProperties": false,
+  "$defs": {
+    "radarEntry": {
+      "type": "object",
+      "description": "A single technology entry on the tech radar",
+      "properties": {
+        "quadrant": {
+          "type": "integer",
+          "description": "The quadrant where this entry appears (0: Tools, 1: Platforms, 2: Languages & Frameworks, 3: Techniques)",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "ring": {
+          "type": "integer",
+          "description": "The ring/level of adoption (0: Adopt, 1: Trial, 2: Assess, 3: Hold)",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "label": {
+          "type": "string",
+          "description": "The name/label of the technology",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "active": {
+          "type": "boolean",
+          "description": "Whether this entry is currently active/visible on the radar"
+        },
+        "moved": {
+          "type": "integer",
+          "description": "Movement indicator (-1: moved out, 0: no change, 1: moved in)",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "link": {
+          "type": "string",
+          "description": "Optional URL link to more information about this technology",
+          "format": "uri",
+          "examples": ["https://www.python.org/", "https://go.dev/"]
+        }
+      },
+      "required": ["quadrant", "ring", "label", "active", "moved"],
+      "additionalProperties": false
+    }
+  }
+}
