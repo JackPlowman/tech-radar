@@ -172,13 +172,6 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "AWS Relational Database Service (RDS)",
-      "active": true,
-      "moved": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 0,
       "label": "AWS Aurora",
       "active": true,
       "moved": 0
@@ -186,7 +179,7 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "AWS Relational Database Service",
+      "label": "AWS Relational Database Service (RDS)",
       "active": true,
       "moved": 0
     },
