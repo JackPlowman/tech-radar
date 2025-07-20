@@ -282,70 +282,88 @@
       "ring": 0,
       "label": "Kanban",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://en.wikipedia.org/wiki/Kanban"
     },
     {
       "quadrant": 3,
       "ring": 0,
       "label": "Microservices",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://martinfowler.com/articles/microservices.html"
     },
     {
       "quadrant": 3,
       "ring": 0,
       "label": "Serverless",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://cloud.google.com/discover/what-is-serverless-architecture?hl=en"
     },
     {
       "quadrant": 3,
       "ring": 0,
       "label": "GitHub Flow",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://guides.github.com/introduction/flow/"
     },
     {
       "quadrant": 3,
       "ring": 0,
       "label": "Git Flow",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://nvie.com/posts/a-successful-git-branching-model/"
     },
     {
       "quadrant": 0,
       "ring": 0,
       "label": "Git",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://git-scm.com/"
     },
     {
       "quadrant": 0,
       "ring": 0,
       "label": "Visual Studio Code",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://code.visualstudio.com/"
     },
     {
       "quadrant": 0,
       "ring": 1,
       "label": "Githooks",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://githooks.com/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 1,
+      "label": "Lefthook",
+      "active": true,
+      "moved": 0,
+      "link": "https://lefthook.dev/"
     },
     {
       "quadrant": 0,
       "ring": 2,
       "label": "Bruno",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.usebruno.com/"
     },
     {
       "quadrant": 0,
       "ring": 3,
       "label": "Postman",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.postman.com/"
     }
   ]
 }
