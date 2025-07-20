@@ -8,9 +8,10 @@ dependencies= [
   "playwright==1.53.0",
   "pytest-playwright==0.7.0",
   "pytest-rerunfailures==15.1",
-  "ruff==0.12.2",
+  "ruff==0.12.4",
   "vulture==2.14",
-  "ty==0.0.1a14",
+  "ty==0.0.1a15",
+  "check-jsonschema==0.33.0",
 ]
 
 [tool.uv]

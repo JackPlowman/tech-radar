@@ -1,0 +1,397 @@
+{
+  "date": "2025.07",
+  "entries": [
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Python",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.python.org/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "AWS Lambda Powertools (Python)",
+      "active": true,
+      "moved": 0,
+      "link": "https://docs.powertools.aws.dev/lambda/python/latest/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "OpenAPI Specifications",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.openapis.org/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "REST",
+      "active": true,
+      "moved": 0,
+      "link": "https://restfulapi.net/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Go",
+      "active": true,
+      "moved": 0,
+      "link": "https://go.dev/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Rust",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.rust-lang.org/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "TypeScript",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.typescriptlang.org/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 3,
+      "label": "JavaScript",
+      "active": true,
+      "moved": 0,
+      "link": "https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Terraform",
+      "active": true,
+      "moved": 0,
+      "link": "https://developer.hashicorp.com/terraform"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "OpenTofu",
+      "active": true,
+      "moved": 0,
+      "link": "https://opentofu.org/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Bash",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.gnu.org/software/bash/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "GNU Make",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.gnu.org/software/make/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Just (Command Runner)",
+      "active": true,
+      "moved": 0,
+      "link": "https://github.com/casey/just"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "React",
+      "active": true,
+      "moved": 0,
+      "link": "https://react.dev/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Astro",
+      "active": true,
+      "moved": 0,
+      "link": "https://astro.build/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Tanstack",
+      "active": true,
+      "moved": 0,
+      "link": "https://tanstack.com/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Vite",
+      "active": true,
+      "moved": 0,
+      "link": "https://vitejs.dev/"
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "NextJS",
+      "active": true,
+      "moved": 0,
+      "link": "https://nextjs.org/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS S3",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/s3/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Secrets Manager",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/secrets-manager/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Parameter Store",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/systems-manager/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Lambda",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/lambda/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Elastic Container Registry",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/ecr/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Step Functions",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/step-functions/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS DynamoDB",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/dynamodb/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Aurora",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/rds/aurora/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Relational Database Service (RDS)",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/rds/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "GitHub",
+      "active": true,
+      "moved": 0,
+      "link": "https://github.com/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "GitHub Actions",
+      "active": true,
+      "moved": 0,
+      "link": "https://github.com/features/actions"
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "GitHub Pages",
+      "active": true,
+      "moved": 0,
+      "link": "https://pages.github.com/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 1,
+      "label": "AWS Kinesis",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/kinesis/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "AWS Glue",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/glue/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "AWS Athena",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/athena/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "AWS Elastic Kubernetes Service",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/eks/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "AWS Fargate",
+      "active": true,
+      "moved": 0,
+      "link": "https://aws.amazon.com/fargate/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Splunk",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.splunk.com/"
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Jenkins",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.jenkins.io/"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Scrum",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.scrum.org/learning-series/what-is-scrum/"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Kanban",
+      "active": true,
+      "moved": 0,
+      "link": "https://en.wikipedia.org/wiki/Kanban"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Microservices",
+      "active": true,
+      "moved": 0,
+      "link": "https://martinfowler.com/articles/microservices.html"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Serverless",
+      "active": true,
+      "moved": 0,
+      "link": "https://cloud.google.com/discover/what-is-serverless-architecture?hl=en"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "GitHub Flow",
+      "active": true,
+      "moved": 0,
+      "link": "https://guides.github.com/introduction/flow/"
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Git Flow",
+      "active": true,
+      "moved": 0,
+      "link": "https://nvie.com/posts/a-successful-git-branching-model/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Git",
+      "active": true,
+      "moved": 0,
+      "link": "https://git-scm.com/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Visual Studio Code",
+      "active": true,
+      "moved": 0,
+      "link": "https://code.visualstudio.com/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 1,
+      "label": "Githooks",
+      "active": true,
+      "moved": 0,
+      "link": "https://githooks.com/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 1,
+      "label": "Lefthook",
+      "active": true,
+      "moved": 0,
+      "link": "https://lefthook.dev/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 2,
+      "label": "Bruno",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.usebruno.com/"
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "Postman",
+      "active": true,
+      "moved": 0,
+      "link": "https://www.postman.com/"
+    }
+  ]
+}

@@ -84,3 +84,11 @@ ty-check:
 # Check uv lockfile
 uv-lock-check:
     uv lock --check
+
+# ------------------------------------------------------------------------------
+# Schema Validation
+# ------------------------------------------------------------------------------
+
+# Validate the Tech Radar configuration file against the schema
+validate-schema:
+    uv run check-jsonschema --schemafile schema_validation/config.schema.json schema_validation/config.json
