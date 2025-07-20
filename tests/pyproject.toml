@@ -10,7 +10,8 @@ dependencies= [
   "pytest-rerunfailures==15.1",
   "ruff==0.12.2",
   "vulture==2.14",
-  "ty==0.0.1a14",
+  "ty==0.0.1a11",
+  "pytest-playwright-visual-snapshot==v0.2.3" # Replace once playwright releases visual comparisons
 ]
 
 [tool.uv]
