@@ -62,7 +62,7 @@
           "examples": ["https://www.python.org/", "https://go.dev/"]
         }
       },
-      "required": ["quadrant", "ring", "label", "active", "moved"],
+      "required": ["quadrant", "ring", "label", "active", "moved", "link"],
       "additionalProperties": false
     }
   }

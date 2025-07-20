@@ -246,56 +246,64 @@
       "ring": 1,
       "label": "AWS Kinesis",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/kinesis/"
     },
     {
       "quadrant": 1,
       "ring": 3,
       "label": "AWS Glue",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/glue/"
     },
     {
       "quadrant": 1,
       "ring": 3,
       "label": "AWS Athena",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/athena/"
     },
     {
       "quadrant": 1,
       "ring": 3,
       "label": "AWS Elastic Kubernetes Service",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/eks/"
     },
     {
       "quadrant": 1,
       "ring": 2,
       "label": "AWS Fargate",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/fargate/"
     },
     {
       "quadrant": 1,
       "ring": 3,
       "label": "Splunk",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.splunk.com/"
     },
     {
       "quadrant": 1,
       "ring": 3,
       "label": "Jenkins",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.jenkins.io/"
     },
     {
       "quadrant": 3,
       "ring": 0,
       "label": "Scrum",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.scrum.org/learning-series/what-is-scrum/"
     },
     {
       "quadrant": 3,
