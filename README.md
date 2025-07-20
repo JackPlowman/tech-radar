@@ -54,11 +54,11 @@ Each entry in the `entries` array should have the following structure:
 
 Fields:
 
-- `quadrant`: The quadrant the entry belongs to (1-4).
+- `quadrant`: The quadrant index (0-3) where the entry belongs.
+  - 0: Tools
   - 1: Platforms & Cloud Services
   - 2: Languages & Frameworks
   - 3: Techniques & Methodologies
-  - 4: Tools
 - `ring`: The ring index (0-3) where the entry belongs.
   - 0: Experienced
   - 1: Trial
