@@ -91,4 +91,4 @@ uv-lock-check:
 
 # Validate the Tech Radar configuration file against the schema
 validate-schema:
-    uv run check-jsonschema --schemafile tests/schema_validation/config.schema.json tests/schema_validation/config.json
+    uv run check-jsonschema --schemafile schema_validation/config.schema.json schema_validation/config.json
