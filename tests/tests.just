@@ -84,3 +84,11 @@ ty-check:
 # Check uv lockfile
 uv-lock-check:
     uv lock --check
+
+# ------------------------------------------------------------------------------
+# Schema Validation
+# ------------------------------------------------------------------------------
+
+# Validate the schema of the generated statistics file
+validate-schema:
+    uv run check-jsonschema --schemafile tests/schema_validation/config.schema.json tests/schema_validation/config.json
