@@ -65,7 +65,7 @@ Fields:
   - 2: Watch
   - 3: Maintain
 - `label`: The name of the technology, tool, technique, or platform.
-- `active`: Whether the entry is currently active (true/false).
+- `active`: Whether the entry is currently active (`true`/`false`).
 - `moved`: Indicates if the entry has moved rings since the last update.
   - 0: No movement
   - 1: Moved inward (up)
