@@ -89,6 +89,6 @@ uv-lock-check:
 # Schema Validation
 # ------------------------------------------------------------------------------
 
-# Validate the schema of the generated statistics file
+# Validate the Tech Radar configuration file against the schema
 validate-schema:
     uv run check-jsonschema --schemafile tests/schema_validation/config.schema.json tests/schema_validation/config.json
