@@ -6,63 +6,80 @@
       "ring": 0,
       "label": "Python",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.python.org/"
     },
     {
       "quadrant": 2,
       "ring": 0,
       "label": "AWS Lambda Powertools (Python)",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://docs.powertools.aws.dev/lambda/python/latest/"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "OpenAPI Specifications",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://swagger.io/specification/"
     },
     {
       "quadrant": 2,
       "ring": 0,
       "label": "REST",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://restfulapi.net/"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "Go",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://go.dev/"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "Rust",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.rust-lang.org/"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "TypeScript",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.typescriptlang.org/"
     },
     {
       "quadrant": 2,
       "ring": 3,
       "label": "JavaScript",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://en.wikipedia.org/wiki/JavaScript"
     },
     {
       "quadrant": 2,
       "ring": 0,
-      "label": "Terraform/OpenTofu",
+      "label": "Terraform",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://developer.hashicorp.com/terraform"
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "OpenTofu",
+      "active": true,
+      "moved": 0,
+      "link": "https://opentofu.org/"
     },
     {
       "quadrant": 2,
