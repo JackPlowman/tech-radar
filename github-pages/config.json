@@ -150,84 +150,96 @@
       "ring": 0,
       "label": "AWS S3",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/s3/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Secrets Manager",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/secrets-manager/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Parameter Store",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/systems-manager/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Lambda",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/lambda/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Elastic Container Registry",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/ecr/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Step Functions",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/step-functions/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS DynamoDB",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/dynamodb/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Aurora",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/rds/aurora/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "AWS Relational Database Service (RDS)",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://aws.amazon.com/rds/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "GitHub",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://github.com/"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "GitHub Actions",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://github.com/features/actions"
     },
     {
       "quadrant": 1,
       "ring": 0,
       "label": "GitHub Pages",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://pages.github.com/"
     },
     {
       "quadrant": 1,
