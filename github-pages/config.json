@@ -1,5 +1,5 @@
 {
-  "date": "2024.09",
+  "date": "2025.07",
   "entries": [
     {
       "quadrant": 2,
@@ -41,7 +41,7 @@
       "ring": 1,
       "label": "Rust",
       "active": true,
-      "moved": 1
+      "moved": 0
     },
     {
       "quadrant": 2,
@@ -80,6 +80,13 @@
     },
     {
       "quadrant": 2,
+      "ring": 0,
+      "label": "Just (Command Runner)",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 2,
       "ring": 1,
       "label": "React",
       "active": true,
@@ -97,14 +104,14 @@
       "ring": 2,
       "label": "Tanstack",
       "active": true,
-      "moved": 1
+      "moved": 0
     },
     {
       "quadrant": 2,
       "ring": 2,
       "label": "Vite/Rolldown",
       "active": true,
-      "moved": 1
+      "moved": 0
     },
     {
       "quadrant": 2,
@@ -159,6 +166,13 @@
       "quadrant": 1,
       "ring": 0,
       "label": "AWS DynamoDB",
+      "active": true,
+      "moved": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "AWS Relational Database Service (RDS)",
       "active": true,
       "moved": 0
     },

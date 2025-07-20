@@ -14,7 +14,7 @@ dependencies= [
 ]
 
 [tool.uv]
-required-version = "0.7.19"
+required-version = "~=0.8.0"
 package = false
 
 [tool.ruff]
