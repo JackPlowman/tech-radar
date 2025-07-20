@@ -23,7 +23,7 @@
       "label": "OpenAPI Specifications",
       "active": true,
       "moved": 0,
-      "link": "https://swagger.io/specification/"
+      "link": "https://www.openapis.org/"
     },
     {
       "quadrant": 2,
@@ -86,56 +86,64 @@
       "ring": 0,
       "label": "Bash",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.gnu.org/software/bash/"
     },
     {
       "quadrant": 2,
       "ring": 0,
       "label": "GNU Make",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://www.gnu.org/software/make/"
     },
     {
       "quadrant": 2,
       "ring": 0,
       "label": "Just (Command Runner)",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://github.com/casey/just"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "React",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://react.dev/"
     },
     {
       "quadrant": 2,
       "ring": 2,
       "label": "Astro",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://astro.build/"
     },
     {
       "quadrant": 2,
       "ring": 2,
       "label": "Tanstack",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://tanstack.com/"
     },
     {
       "quadrant": 2,
       "ring": 2,
-      "label": "Vite/Rolldown",
+      "label": "Vite",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://vitejs.dev/"
     },
     {
       "quadrant": 2,
       "ring": 1,
       "label": "NextJS",
       "active": true,
-      "moved": 0
+      "moved": 0,
+      "link": "https://nextjs.org/"
     },
     {
       "quadrant": 1,
