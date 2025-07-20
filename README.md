@@ -59,7 +59,7 @@ Fields:
   - 2: Languages & Frameworks
   - 3: Techniques & Methodologies
   - 4: Tools
-- `ring`: The ring the entry belongs to (0-3).
+- `ring`: The ring index (0-3) where the entry belongs.
   - 0: Experienced
   - 1: Trial
   - 2: Watch
