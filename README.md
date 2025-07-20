@@ -29,3 +29,45 @@ Then navigate to `http://localhost:8000/github-pages/`
 ### To update the radar data
 
 To change the radar data, edit the `config.json` file in the `github-pages` directory.
+
+The configuration file is structured as follows:
+
+```json
+{
+  "date": "2025.07",
+  "entries": []
+}
+```
+
+Each entry in the `entries` array should have the following structure:
+
+```json
+{
+  "quadrant": 1,
+  "ring": 0,
+  "label": "Python",
+  "active": true,
+  "moved": 0,
+  "link": "https://www.python.org/"
+}
+```
+
+Fields:
+
+- `quadrant`: The quadrant the entry belongs to (1-4).
+  - 1: Platforms & Cloud Services
+  - 2: Languages & Frameworks
+  - 3: Techniques & Methodologies
+  - 4: Tools
+- `ring`: The ring the entry belongs to (0-3).
+  - 0: Experienced
+  - 1: Trial
+  - 2: Watch
+  - 3: Maintain
+- `label`: The name of the technology, tool, technique, or platform.
+- `active`: Whether the entry is currently active (true/false).
+- `moved`: The number of rings the entry has moved.
+  - 0: No movement
+  - 1: Moved inward (up)
+  - 2: Moved outward (down)
+- `link`: A link to more information about the entry.
