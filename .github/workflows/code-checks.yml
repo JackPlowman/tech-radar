@@ -157,3 +157,19 @@ jobs:
     uses: JackPlowman/reusable-workflows/.github/workflows/codeql-analysis.yml@f45ce248498fd7d46a13ed80fb9f37e08014baae # v2025.07.20.01
     with:
       language: ${{ matrix.language }}
+
+  schema-validation:
+    name: Schema Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Set up dependencies
+        uses: ./.github/actions/setup-tests-dependencies
+      - name: Copy config to schema validation directory
+        run: cp github-pages/config.json tests/schema_validation/config.json
+      - name: Validate Config against schema
+        run: just tests::validate-schema
