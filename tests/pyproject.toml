@@ -4,19 +4,22 @@ name = "tests"
 dynamic = ["version"]
 requires-python = "~=3.13.0"
 dependencies= [
-  "pytest==8.4.1",
-  "playwright==1.53.0",
-  "pytest-playwright==0.7.0",
-  "pytest-rerunfailures==15.1",
-  "ruff==0.12.4",
+  "pytest==8.4.2",
+  "playwright==1.55.0",
+  "pytest-playwright==0.7.1",
+  "pytest-rerunfailures==16.0.1",
+  "ruff==0.13.2",
   "vulture==2.14",
-  "ty==0.0.1a15",
-  "check-jsonschema==0.33.0",
+  "ty==0.0.1a21",
+  "check-jsonschema==0.34.0",
 ]
 
 [tool.uv]
 required-version = "~=0.8.0"
 package = false
+
+[tool.setuptools]
+py-modules = ["ui", "schema_validation"]
 
 [tool.ruff]
 target-version = "py313"
