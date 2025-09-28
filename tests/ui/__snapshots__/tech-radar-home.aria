@@ -212,13 +212,13 @@
     - /url: https://www.postman.com/
 - table:
   - rowgroup:
-    - row:
-      - 'cell "What is the Tech Radar? Jack Plowman''s Tech Radar is a list of technologies, complemented by an assessment result, called ring assignment. We use four rings with the following semantics: EXPERIENCED — Technologies I am proficient in, currently utilizing in both main and side projects. I am skilled with these and aim to enhance my expertise further. TRIAL — Technologies I am actively learning and using in projects or side projects. WATCH — Technologies I am interested in exploring further and may consider for future projects. MAINTAIN — Technologies I currently use or have used in the past, but do not plan to adopt for new projects."':
+    - 'row "What is the Tech Radar? Jack Plowman''s Tech Radar is a list of technologies, complemented by an assessment result, called ring assignment. I use four rings with the following semantics: EXPERIENCED — Technologies I am proficient in, currently utilizing in both main and side projects. I am skilled with these and aim to enhance my expertise further. TRIAL — Technologies I am actively learning and using in projects or side projects. WATCH — Technologies I am interested in exploring further and may consider for future projects. MAINTAIN — Technologies I currently use or have used in the past, but do not plan to adopt for new projects. What is the purpose? The Tech Radar is a tool to visualize technology understanding to inspire and support tech choices on Jack Plowman''s future projects. Why do I maintain it? The Tech Radar is maintained by Jack Plowman ensures record of technology decisions."':
+      - 'cell "What is the Tech Radar? Jack Plowman''s Tech Radar is a list of technologies, complemented by an assessment result, called ring assignment. I use four rings with the following semantics: EXPERIENCED — Technologies I am proficient in, currently utilizing in both main and side projects. I am skilled with these and aim to enhance my expertise further. TRIAL — Technologies I am actively learning and using in projects or side projects. WATCH — Technologies I am interested in exploring further and may consider for future projects. MAINTAIN — Technologies I currently use or have used in the past, but do not plan to adopt for new projects."':
         - heading "What is the Tech Radar?" [level=3]
         - paragraph:
           - text: Jack Plowman's Tech Radar is a list of technologies, complemented by an assessment result, called
           - emphasis: ring assignment
-          - text: ". We use four rings with the following semantics:"
+          - text: ". I use four rings with the following semantics:"
         - list:
           - listitem:
             - strong: EXPERIENCED
