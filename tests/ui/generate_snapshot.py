@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import os
+from os import getenv
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 
 def main() -> None:
     """Generate a snapshot of the tech radar page for visual regression testing."""
-    project_url = os.environ.get("PROJECT_URL")
+    project_url = getenv("PROJECT_URL")
     if not project_url:
         msg = (
             "The environment variable 'PROJECT_URL' "

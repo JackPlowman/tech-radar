@@ -4,14 +4,15 @@ name = "tests"
 dynamic = ["version"]
 requires-python = "~=3.13.0"
 dependencies= [
-  "pytest==8.4.2",
+  "check-jsonschema==0.34.0",
+  "greenlet==3.2.4",
   "playwright==1.55.0",
   "pytest-playwright==0.7.1",
   "pytest-rerunfailures==16.0.1",
+  "pytest==8.4.2",
   "ruff==0.13.2",
-  "vulture==2.14",
   "ty==0.0.1a21",
-  "check-jsonschema==0.34.0",
+  "vulture==2.14",
 ]
 
 [tool.uv]
@@ -40,26 +41,6 @@ ignore = [
 
 fixable = ["ALL"]
 unfixable = []
-
-exclude = [
-  ".bzr",
-  ".direnv",
-  ".eggs",
-  ".git",
-  ".hg",
-  ".mypy_cache",
-  ".nox",
-  ".pants.d",
-  ".pytype",
-  ".ruff_cache",
-  ".svn",
-  ".tox",
-  ".venv",
-  "__pypackages__",
-  "_build",
-]
-
-dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [tool.ruff.lint.per-file-ignores]
 "**test_*.py" = ["S101", "D102", "D103", "SLF001", "PT019"]
