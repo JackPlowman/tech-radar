@@ -13,3 +13,8 @@ indent_size = 4
 
 [*.md]
 indent_size = unset
+
+[tests/ui/__snapshots__/*]
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
