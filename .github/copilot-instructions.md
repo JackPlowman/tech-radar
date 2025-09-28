@@ -68,7 +68,6 @@ just pinact-check         # GitHub Actions pinning
 1. **Modular Just Commands**: Uses `mod tests 'tests/tests.just'` pattern - call test commands with `just tests::<command>`
 
 2. **UV Python Management**: Tests use UV for fast dependency resolution, not pip/poetry
-
    - `pyproject.toml` in tests/ subdirectory
    - `uv sync --all-extras` for installation
 
