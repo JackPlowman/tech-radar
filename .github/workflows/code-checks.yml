@@ -33,7 +33,7 @@ jobs:
       security-events: write # Allow the workflow to upload analysis results
     strategy:
       matrix:
-        language: [actions]
+        language: [actions, python]
     uses: JackPlowman/reusable-workflows/.github/workflows/codeql-analysis.yml@fbdbc94a4c6834568b4cda1a34a590334b4b1c3a # v2025.09.28.03
     with:
       language: ${{ matrix.language }}
