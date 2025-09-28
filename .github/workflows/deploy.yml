@@ -19,9 +19,8 @@ jobs:
     environment:
       name: github-pages
     permissions:
-      contents: write
-      pages: write
-      id-token: write
+      pages: write # to deploy to GitHub Pages
+      id-token: write # to deploy to GitHub Pages
     timeout-minutes: 60
     steps:
       - name: Checkout Repository
