@@ -24,6 +24,10 @@ run-ci $browser:
 playwright-install:
     uv run playwright install --with-deps
 
+# Generate Snapshot for Visual Regression Testing
+generate-snapshot $PROJECT_URL=DEFAULT_PROJECT_URL $browser="chromium":
+    uv run python ui/generate_snapshot.py --url ${PROJECT_URL} --browser ${browser}
+
 # Remove all compiled Python files
 clean:
     find . \( \
@@ -36,7 +40,8 @@ clean:
       -name '*.pyd' -o \
       -name '*.pyo' -o \
       -name 'coverage.xml' -o \
-      -name 'db.sqlite3' \
+      -name 'db.sqlite3' -o \
+      -name '__snapshots__' \
     \) -print | xargs rm -rfv
 
 # ------------------------------------------------------------------------------
