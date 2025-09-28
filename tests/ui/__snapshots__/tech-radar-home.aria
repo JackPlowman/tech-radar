@@ -1,0 +1,239 @@
+- button "Toggle Theme"
+- img:
+  - text: "EXPERIENCED TRIAL WATCH MAINTAIN Jack Plowman's Tech Radar 2025.07 ▲ moved up ▼ moved down Tools: EXPERIENCED"
+  - link "44. Git":
+    - /url: https://git-scm.com/
+  - link "45. Visual Studio Code":
+    - /url: https://code.visualstudio.com/
+  - text: TRIAL
+  - link "46. Githooks":
+    - /url: https://githooks.com/
+  - link "47. Lefthook":
+    - /url: https://lefthook.dev/
+  - text: WATCH
+  - link "48. Bruno":
+    - /url: https://www.usebruno.com/
+  - text: MAINTAIN
+  - link "49. Postman":
+    - /url: https://www.postman.com/
+  - text: "Platforms & Cloud Services: EXPERIENCED"
+  - link "25. AWS Aurora":
+    - /url: https://aws.amazon.com/rds/aurora/
+  - link "26. AWS DynamoDB":
+    - /url: https://aws.amazon.com/dynamodb/
+  - link "27. AWS Elastic Container Registry":
+    - /url: https://aws.amazon.com/ecr/
+  - link "28. AWS Lambda":
+    - /url: https://aws.amazon.com/lambda/
+  - link "29. AWS Parameter Store":
+    - /url: https://aws.amazon.com/systems-manager/
+  - link "30. AWS Relational Database Service (RDS)":
+    - /url: https://aws.amazon.com/rds/
+  - link "31. AWS S3":
+    - /url: https://aws.amazon.com/s3/
+  - link "32. AWS Secrets Manager":
+    - /url: https://aws.amazon.com/secrets-manager/
+  - link "33. AWS Step Functions":
+    - /url: https://aws.amazon.com/step-functions/
+  - link "34. GitHub":
+    - /url: https://github.com/
+  - link "35. GitHub Actions":
+    - /url: https://github.com/features/actions
+  - link "36. GitHub Pages":
+    - /url: https://pages.github.com/
+  - text: TRIAL
+  - link "37. AWS Kinesis":
+    - /url: https://aws.amazon.com/kinesis/
+  - text: WATCH
+  - link "38. AWS Fargate":
+    - /url: https://aws.amazon.com/fargate/
+  - text: MAINTAIN
+  - link "39. AWS Athena":
+    - /url: https://aws.amazon.com/athena/
+  - link "40. AWS Elastic Kubernetes Service":
+    - /url: https://aws.amazon.com/eks/
+  - link "41. AWS Glue":
+    - /url: https://aws.amazon.com/glue/
+  - link "42. Jenkins":
+    - /url: https://www.jenkins.io/
+  - link "43. Splunk":
+    - /url: https://www.splunk.com/
+  - text: "Languages & Frameworks: EXPERIENCED"
+  - link "1. AWS Lambda Powertools (Python)":
+    - /url: https://docs.powertools.aws.dev/lambda/python/latest/
+  - link "2. Bash":
+    - /url: https://www.gnu.org/software/bash/
+  - link "3. GNU Make":
+    - /url: https://www.gnu.org/software/make/
+  - link "4. Just (Command Runner)":
+    - /url: https://github.com/casey/just
+  - link "5. OpenTofu":
+    - /url: https://opentofu.org/
+  - link "6. Python":
+    - /url: https://www.python.org/
+  - link "7. REST":
+    - /url: https://restfulapi.net/
+  - link "8. Terraform":
+    - /url: https://developer.hashicorp.com/terraform
+  - text: TRIAL
+  - link "9. Go":
+    - /url: https://go.dev/
+  - link "10. NextJS":
+    - /url: https://nextjs.org/
+  - link "11. OpenAPI Specifications":
+    - /url: https://www.openapis.org/
+  - link "12. React":
+    - /url: https://react.dev/
+  - link "13. Rust":
+    - /url: https://www.rust-lang.org/
+  - link "14. TypeScript":
+    - /url: https://www.typescriptlang.org/
+  - text: WATCH
+  - link "15. Astro":
+    - /url: https://astro.build/
+  - link "16. Tanstack":
+    - /url: https://tanstack.com/
+  - link "17. Vite":
+    - /url: https://vitejs.dev/
+  - text: MAINTAIN
+  - link "18. JavaScript":
+    - /url: https://en.wikipedia.org/wiki/JavaScript
+  - text: "Techniques & Methodologies: EXPERIENCED"
+  - link "19. Git Flow":
+    - /url: https://nvie.com/posts/a-successful-git-branching-model/
+  - link "20. GitHub Flow":
+    - /url: https://guides.github.com/introduction/flow/
+  - link "21. Kanban":
+    - /url: https://en.wikipedia.org/wiki/Kanban
+  - link "22. Microservices":
+    - /url: https://martinfowler.com/articles/microservices.html
+  - link "23. Scrum":
+    - /url: https://www.scrum.org/learning-series/what-is-scrum/
+  - link "24. Serverless":
+    - /url: https://cloud.google.com/discover/what-is-serverless-architecture?hl=en
+  - text: TRIAL WATCH MAINTAIN
+  - link "6":
+    - /url: https://www.python.org/
+  - link "1":
+    - /url: https://docs.powertools.aws.dev/lambda/python/latest/
+  - link "11":
+    - /url: https://www.openapis.org/
+  - link "7":
+    - /url: https://restfulapi.net/
+  - link "9":
+    - /url: https://go.dev/
+  - link "13":
+    - /url: https://www.rust-lang.org/
+  - link "14":
+    - /url: https://www.typescriptlang.org/
+  - link "18":
+    - /url: https://en.wikipedia.org/wiki/JavaScript
+  - link "8":
+    - /url: https://developer.hashicorp.com/terraform
+  - link "5":
+    - /url: https://opentofu.org/
+  - link "2":
+    - /url: https://www.gnu.org/software/bash/
+  - link "3":
+    - /url: https://www.gnu.org/software/make/
+  - link "4":
+    - /url: https://github.com/casey/just
+  - link "12":
+    - /url: https://react.dev/
+  - link "15":
+    - /url: https://astro.build/
+  - link "16":
+    - /url: https://tanstack.com/
+  - link "17":
+    - /url: https://vitejs.dev/
+  - link "10":
+    - /url: https://nextjs.org/
+  - link "31":
+    - /url: https://aws.amazon.com/s3/
+  - link "32":
+    - /url: https://aws.amazon.com/secrets-manager/
+  - link "29":
+    - /url: https://aws.amazon.com/systems-manager/
+  - link "28":
+    - /url: https://aws.amazon.com/lambda/
+  - link "27":
+    - /url: https://aws.amazon.com/ecr/
+  - link "33":
+    - /url: https://aws.amazon.com/step-functions/
+  - link "26":
+    - /url: https://aws.amazon.com/dynamodb/
+  - link "25":
+    - /url: https://aws.amazon.com/rds/aurora/
+  - link "30":
+    - /url: https://aws.amazon.com/rds/
+  - link "34":
+    - /url: https://github.com/
+  - link "35":
+    - /url: https://github.com/features/actions
+  - link "36":
+    - /url: https://pages.github.com/
+  - link "37":
+    - /url: https://aws.amazon.com/kinesis/
+  - link "41":
+    - /url: https://aws.amazon.com/glue/
+  - link "39":
+    - /url: https://aws.amazon.com/athena/
+  - link "40":
+    - /url: https://aws.amazon.com/eks/
+  - link "38":
+    - /url: https://aws.amazon.com/fargate/
+  - link "43":
+    - /url: https://www.splunk.com/
+  - link "42":
+    - /url: https://www.jenkins.io/
+  - link "23":
+    - /url: https://www.scrum.org/learning-series/what-is-scrum/
+  - link "21":
+    - /url: https://en.wikipedia.org/wiki/Kanban
+  - link "22":
+    - /url: https://martinfowler.com/articles/microservices.html
+  - link "24":
+    - /url: https://cloud.google.com/discover/what-is-serverless-architecture?hl=en
+  - link "20":
+    - /url: https://guides.github.com/introduction/flow/
+  - link "19":
+    - /url: https://nvie.com/posts/a-successful-git-branching-model/
+  - link "44":
+    - /url: https://git-scm.com/
+  - link "45":
+    - /url: https://code.visualstudio.com/
+  - link "46":
+    - /url: https://githooks.com/
+  - link "47":
+    - /url: https://lefthook.dev/
+  - link "48":
+    - /url: https://www.usebruno.com/
+  - link "49":
+    - /url: https://www.postman.com/
+- table:
+  - rowgroup:
+    - row:
+      - 'cell "What is the Tech Radar? Jack Plowman''s Tech Radar is a list of technologies, complemented by an assessment result, called ring assignment. We use four rings with the following semantics: EXPERIENCED — Technologies I am proficient in, currently utilizing in both main and side projects. I am skilled with these and aim to enhance my expertise further. TRIAL — Technologies I am actively learning and using in projects or side projects. WATCH — Technologies I am interested in exploring further and may consider for future projects. MAINTAIN — Technologies I currently use or have used in the past, but do not plan to adopt for new projects."':
+        - heading "What is the Tech Radar?" [level=3]
+        - paragraph:
+          - text: Jack Plowman's Tech Radar is a list of technologies, complemented by an assessment result, called
+          - emphasis: ring assignment
+          - text: ". We use four rings with the following semantics:"
+        - list:
+          - listitem:
+            - strong: EXPERIENCED
+            - text: — Technologies I am proficient in, currently utilizing in both main and side projects. I am skilled with these and aim to enhance my expertise further.
+          - listitem:
+            - strong: TRIAL
+            - text: — Technologies I am actively learning and using in projects or side projects.
+          - listitem:
+            - strong: WATCH
+            - text: — Technologies I am interested in exploring further and may consider for future projects.
+          - listitem:
+            - strong: MAINTAIN
+            - text: — Technologies I currently use or have used in the past, but do not plan to adopt for new projects.
+      - cell "What is the purpose? The Tech Radar is a tool to visualize technology understanding to inspire and support tech choices on Jack Plowman's future projects. Why do I maintain it? The Tech Radar is maintained by Jack Plowman ensures record of technology decisions.":
+        - heading "What is the purpose?" [level=3]
+        - paragraph: The Tech Radar is a tool to visualize technology understanding to inspire and support tech choices on Jack Plowman's future projects.
+        - heading "Why do I maintain it?" [level=3]
+        - paragraph: The Tech Radar is maintained by Jack Plowman ensures record of technology decisions.
