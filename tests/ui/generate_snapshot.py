@@ -7,9 +7,13 @@ from playwright.sync_api import sync_playwright
 
 
 def main() -> None:
+    """Generate a snapshot of the tech radar page for visual regression testing."""
     project_url = os.environ.get("PROJECT_URL")
     if not project_url:
-        msg = "The environment variable 'PROJECT_URL' must be set to capture the snapshot."
+        msg = (
+            "The environment variable 'PROJECT_URL' "
+            "must be set to capture the snapshot."
+        )
         raise RuntimeError(msg)
 
     snapshot_path = Path(__file__).parent / "__snapshots__" / "tech-radar-home.aria"
