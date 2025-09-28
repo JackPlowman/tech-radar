@@ -1,8 +1,11 @@
 from logging import getLogger
 from os import getenv
+from pathlib import Path
 
 import pytest
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
+
+SNAPSHOT_DIR = Path(__file__).parent / "__snapshots__"
 
 logger = getLogger(__name__)
 
@@ -17,21 +20,58 @@ def project_url() -> str:
     return url
 
 
-def test_title(page: Page, project_url: str) -> None:
+@pytest.fixture
+def radar_page(page: Page, project_url: str) -> Page:
+    """A Playwright page primed with deterministic settings for the radar."""
+    page.add_init_script(
+        """
+        (() => {
+            window.localStorage.setItem('theme', 'light');
+            window.matchMedia = (query) => ({
+                matches: false,
+                media: query,
+                onchange: null,
+                addListener: () => {},
+                removeListener: () => {},
+                addEventListener: () => {},
+                removeEventListener: () => {},
+                dispatchEvent: () => false,
+            });
+        })();
+        """,
+    )
+    page.set_viewport_size({"width": 1450, "height": 1000})
+    page.goto(project_url, wait_until="networkidle")
+    page.wait_for_selector("svg#radar")
+    page.add_style_tag(
+        content="""
+        *, *::before, *::after {
+            transition-duration: 0s !important;
+            animation-duration: 0s !important;
+            animation-delay: 0s !important;
+        }
+        """,
+    )
+    return page
+
+
+def test_title(radar_page: Page) -> None:
     """Test the page title."""
-    # Act
-    page.goto(project_url)
-    # Assert
-    assert page.title() == "Jack Plowman's Tech Radar"
+    assert radar_page.title() == "Jack Plowman's Tech Radar"
 
 
-def test_theme_toggle(page: Page, project_url: str) -> None:
+def test_theme_toggle(radar_page: Page) -> None:
     """Test the theme toggle functionality."""
-    # Act
-    page.goto(project_url)
-    # Assert
-    assert page.locator("button#theme-toggle").is_visible()
+    assert radar_page.locator("button#theme-toggle").is_visible()
     # Click the theme toggle button
-    page.locator("button#theme-toggle").click()
+    radar_page.locator("button#theme-toggle").click()
     # Assert the theme has changed
-    assert page.locator("body").get_attribute("class") == "dark-mode"
+    assert radar_page.locator("body").get_attribute("class") == "dark-mode"
+
+
+def test_radar_visual_regression(radar_page: Page) -> None:
+    """Ensure the radar page maintains its visual appearance."""
+    snapshot_path = SNAPSHOT_DIR / "tech-radar-home.aria"
+    expected_snapshot = snapshot_path.read_text(encoding="utf-8")
+    radar_page.wait_for_timeout(500)
+    expect(radar_page.locator("body")).to_match_aria_snapshot(expected_snapshot)
