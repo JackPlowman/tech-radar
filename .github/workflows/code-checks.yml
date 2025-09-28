@@ -10,7 +10,6 @@ on:
 
 permissions:
   contents: read
-  packages: read
 
 env:
   FORCE_COLOR: 1
@@ -20,19 +19,30 @@ jobs:
     name: Common Code Checks
     permissions:
       contents: read
-      actions: read
-      pull-requests: write
-      security-events: write
-    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@fbdbc94a4c6834568b4cda1a34a590334b4b1c3a # v2025.09.28.03
+      actions: read # Allow the workflow to read actions metadata
+      pull-requests: write # Allow the workflow to create and modify pull request comments
+      security-events: write # Allow the workflow to upload analysis results
+    uses: JackPlowman/reusable-workflows/.github/workflows/common-code-checks.yml@c7b491eb600bdc990a92ee18b10e3e5b7c09212f # v2025.09.27.02
     secrets:
       workflow_github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  codeql-checks:
+    name: CodeQL Analysis
+    permissions:
+      contents: read
+      security-events: write # Allow the workflow to upload analysis results
+    strategy:
+      matrix:
+        language: [actions]
+    uses: JackPlowman/reusable-workflows/.github/workflows/codeql-analysis.yml@c7b491eb600bdc990a92ee18b10e3e5b7c09212f # v2025.09.27.02
+    with:
+      language: ${{ matrix.language }}
 
   run-python-tests-lint-checks:
     name: Run Python Tests Lint Checks
     runs-on: ubuntu-latest
     permissions:
-      statuses: write
-      security-events: write
+      security-events: write # to upload analysis results
     steps:
       - name: Checkout Repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -91,8 +101,7 @@ jobs:
     name: Run Python Tests Lockfile Check
     runs-on: ubuntu-latest
     permissions:
-      statuses: write
-      security-events: write
+      security-events: write # to upload analysis results
     steps:
       - name: Checkout Repository
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
@@ -118,18 +127,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-  codeql-checks:
-    name: CodeQL Analysis
-    permissions:
-      contents: read
-      security-events: write
-    strategy:
-      matrix:
-        language: [actions]
-    uses: JackPlowman/reusable-workflows/.github/workflows/codeql-analysis.yml@fbdbc94a4c6834568b4cda1a34a590334b4b1c3a # v2025.09.28.03
-    with:
-      language: ${{ matrix.language }}
 
   schema-validation:
     name: Schema Validation
