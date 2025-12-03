@@ -8,9 +8,9 @@ dependencies= [
   "playwright==1.56.0",
   "pytest-playwright==0.7.2",
   "pytest-rerunfailures==16.1",
-  "pytest==9.0.0",
+  "pytest==9.0.1",
   "ruff==0.14.6",
-  "ty==0.0.1a27",
+  "ty==0.0.1a28",
   "vulture==2.14",
 ]
 
