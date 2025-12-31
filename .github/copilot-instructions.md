@@ -50,7 +50,7 @@ just tests::run "http://localhost:8000/github-pages/" # Custom URL
 just tests::run-ci chromium               # CI browser-specific testing
 ```
 
-### Code Quality (Pre-commit via Lefthook)
+### Code Quality (Pre-commit via Prek)
 
 ```bash
 # Install git hooks
