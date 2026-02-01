@@ -3,20 +3,21 @@
 name = "tests"
 dynamic = ["version"]
 requires-python = "~=3.14.0"
-dependencies= [
+dependencies = [
   "check-jsonschema==0.36.0",
-  "playwright==1.57.0",
+  "playwright==1.58.0",
   "pytest-playwright==0.7.2",
   "pytest-rerunfailures==16.1",
   "pytest==9.0.2",
-  "ruff==0.14.12",
-  "ty==0.0.12",
+  "ruff==0.14.14",
+  "ty==0.0.14",
   "vulture==2.14",
 ]
 
 [tool.uv]
 required-version = "~=0.9.0"
 package = false
+override-dependencies = ["urllib3==2.6.3"]
 
 [tool.setuptools]
 py-modules = ["ui", "schema_validation"]
