@@ -4,13 +4,13 @@ name = "tests"
 dynamic = ["version"]
 requires-python = "~=3.14.0"
 dependencies = [
-  "check-jsonschema==0.36.0",
+  "check-jsonschema==0.36.1",
   "playwright==1.58.0",
   "pytest-playwright==0.7.2",
   "pytest-rerunfailures==16.1",
   "pytest==9.0.2",
-  "ruff==0.14.14",
-  "ty==0.0.14",
+  "ruff==0.15.1",
+  "ty==0.0.17",
   "vulture==2.14",
 ]
 
