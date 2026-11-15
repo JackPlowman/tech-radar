@@ -7,7 +7,11 @@ from playwright.sync_api import sync_playwright
 
 
 def main() -> None:
-    """Generate a snapshot of the tech radar page for visual regression testing."""
+    """Capture a raw Chromium snapshot of the tech radar.
+
+    When refreshing the shared template, retain the patterns for Firefox SVG
+    spacing.
+    """
     project_url = getenv("PROJECT_URL")
     if not project_url:
         msg = (

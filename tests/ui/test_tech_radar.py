@@ -70,8 +70,7 @@ def test_theme_toggle(radar_page: Page) -> None:
 
 
 def test_radar_visual_regression(radar_page: Page) -> None:
-    """Ensure the radar page maintains its visual appearance."""
+    """Ensure the radar page maintains its accessibility structure and content."""
     snapshot_path = SNAPSHOT_DIR / "tech-radar-home.aria"
     expected_snapshot = snapshot_path.read_text(encoding="utf-8")
-    radar_page.wait_for_timeout(500)
     expect(radar_page.locator("body")).to_match_aria_snapshot(expected_snapshot)
