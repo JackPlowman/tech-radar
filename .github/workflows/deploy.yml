@@ -24,23 +24,23 @@ jobs:
     timeout-minutes: 60
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
       - name: Create Directories
         run: mkdir -p _site
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1.0.13
+        uses: actions/jekyll-build-pages@44a6e6beabd48582f863aeeb6cb2151cc1716697 # v1.0.13
         with:
           source: ./github-pages
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5.0.0
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: ./_site
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v5.0.1
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
   ui-tests:
     name: Run UI Tests in ${{ matrix.browser }}
@@ -52,7 +52,7 @@ jobs:
         browser: [firefox, chromium, webkit]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
@@ -74,12 +74,12 @@ jobs:
     needs: deploy-github-pages
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v7.0.1
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
       - name: Run Link Tests
-        uses: JustinBeckwith/linkinator-action@v2.5.0
+        uses: JustinBeckwith/linkinator-action@12f7a61a56e5e75d659f0dfd6357e2d852ede281 # v2.5.0
         with:
           paths: https://jackplowman.github.io/tech-radar/
           recurse: true
