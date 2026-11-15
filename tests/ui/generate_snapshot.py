@@ -55,7 +55,7 @@ def main() -> None:
         snapshot = page.locator("body").aria_snapshot()
         browser.close()
 
-    snapshot_path.write_text(snapshot, encoding="utf-8")
+    snapshot_path.write_text(snapshot, encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
