@@ -1,9 +1,10 @@
+# Firefox omits some spaces between adjacent SVG labels.
 - button "Toggle Theme"
 - img:
-  - text: EXPERIENCED TRIAL WATCH MAINTAIN
+  - text: /^EXPERIENCED\s?TRIAL\s?WATCH\s?MAINTAIN$/
   - link "Jack Plowman's Tech Radar":
     - /url: https://github.com/JackPlowman/tech-radar
-  - text: "2025.07 ▲ moved up ▼ moved down ★ new ⬤ no change Tools: EXPERIENCED"
+  - text: /^2025\.07\s?▲ moved up ▼ moved down ★ new ⬤ no change\s?Tools:\s?EXPERIENCED$/
   - link "44. Git":
     - /url: https://git-scm.com/
   - link "45. Visual Studio Code":
@@ -19,7 +20,7 @@
   - text: MAINTAIN
   - link "49. Postman":
     - /url: https://www.postman.com/
-  - text: "Platforms & Cloud Services: EXPERIENCED"
+  - text: /^Platforms & Cloud Services:\s?EXPERIENCED$/
   - link "25. AWS Aurora":
     - /url: https://aws.amazon.com/rds/aurora/
   - link "26. AWS DynamoDB":
@@ -61,7 +62,7 @@
     - /url: https://www.jenkins.io/
   - link "43. Splunk":
     - /url: https://www.splunk.com/
-  - text: "Languages & Frameworks: EXPERIENCED"
+  - text: /^Languages & Frameworks:\s?EXPERIENCED$/
   - link "1. AWS Lambda Powertools(Python)":
     - /url: https://docs.powertools.aws.dev/lambda/python/latest/
   - link "2. Bash":
@@ -101,7 +102,7 @@
   - text: MAINTAIN
   - link "18. JavaScript":
     - /url: https://en.wikipedia.org/wiki/JavaScript
-  - text: "Techniques & Methodologies: EXPERIENCED"
+  - text: /^Techniques & Methodologies:\s?EXPERIENCED$/
   - link "19. Git Flow":
     - /url: https://nvie.com/posts/a-successful-git-branching-model/
   - link "20. GitHub Flow":
@@ -114,7 +115,7 @@
     - /url: https://www.scrum.org/learning-series/what-is-scrum/
   - link "24. Serverless":
     - /url: https://cloud.google.com/discover/what-is-serverless-architecture?hl=en
-  - text: TRIAL WATCH MAINTAIN
+  - text: /^TRIAL\s?WATCH\s?MAINTAIN$/
   - link "6":
     - /url: https://www.python.org/
   - link "1":

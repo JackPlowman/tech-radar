@@ -1,7 +1,7 @@
 [project]
 name = "tests"
 dynamic = ["version"]
-requires-python = "~=3.14.0"
+requires-python = "~=3.15.2"
 dependencies = [
   "check-jsonschema==0.39.0",
   "playwright==1.65.2",
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [tool.uv]
-required-version = "~=0.13.0"
+required-version = "~=0.13.8"
 package = false
 override-dependencies = ["urllib3==2.8.0"]
 
@@ -22,7 +22,7 @@ override-dependencies = ["urllib3==2.8.0"]
 py-modules = ["ui", "schema_validation"]
 
 [tool.ruff]
-target-version = "py314"
+target-version = "py315"
 
 [tool.ruff.lint]
 extend-select = ["E501"]
