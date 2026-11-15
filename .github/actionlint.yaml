@@ -1,0 +1,5 @@
+# Actionlint 1.7.12 does not recognize same-repository action references.
+paths:
+  .github/workflows/*.yml:
+    ignore:
+      - '^specifying action "\$/\.github/actions/setup-tests-dependencies" in invalid format because ref is missing\.'

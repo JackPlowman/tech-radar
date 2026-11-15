@@ -3,20 +3,20 @@ name = "tests"
 dynamic = ["version"]
 requires-python = "~=3.14.0"
 dependencies = [
-  "check-jsonschema==0.37.1",
-  "playwright==1.58.0",
-  "pytest-playwright==0.7.2",
-  "pytest-rerunfailures==16.1",
-  "pytest==9.0.3",
-  "ruff==0.15.9",
-  "ty==0.0.29",
+  "check-jsonschema==0.39.0",
+  "playwright==1.65.2",
+  "pytest-playwright==0.10.0",
+  "pytest-rerunfailures==16.7",
+  "pytest==9.2.0",
+  "ruff==0.17.5",
+  "ty==0.0.104",
   "vulture==2.16",
 ]
 
 [tool.uv]
-required-version = "~=0.11.0"
+required-version = "~=0.13.0"
 package = false
-override-dependencies = ["urllib3==2.6.3"]
+override-dependencies = ["urllib3==2.8.0"]
 
 [tool.setuptools]
 py-modules = ["ui", "schema_validation"]
@@ -30,6 +30,7 @@ select = ["ALL"]
 
 ignore = [
   "COM812",  # Ignore due to conflict with Ruff formatter
+  "CPY001",  # This project uses a repository-level licence
   "ISC001",  # Ignore due to conflict with Ruff formatter
   "PLR2004", # Ignore magic value
   "D104",    # Ignore missing docstring in public package

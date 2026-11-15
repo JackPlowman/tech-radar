@@ -60,7 +60,7 @@ just install-git-hooks
 just prettier-check        # Format checking
 just gitleaks-detect       # Secret scanning
 just zizmor-check         # GitHub Actions security
-just pinact-check         # GitHub Actions pinning
+just actions-lock-check   # Verify GitHub Actions dependency pins
 ```
 
 ## Project-Specific Patterns

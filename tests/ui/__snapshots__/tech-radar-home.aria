@@ -1,6 +1,9 @@
 - button "Toggle Theme"
 - img:
-  - text: "EXPERIENCED TRIAL WATCH MAINTAIN Jack Plowman's Tech Radar 2025.07 ▲ moved up ▼ moved down Tools: EXPERIENCED"
+  - text: EXPERIENCED TRIAL WATCH MAINTAIN
+  - link "Jack Plowman's Tech Radar":
+    - /url: https://github.com/JackPlowman/tech-radar
+  - text: "2025.07 ▲ moved up ▼ moved down ★ new ⬤ no change Tools: EXPERIENCED"
   - link "44. Git":
     - /url: https://git-scm.com/
   - link "45. Visual Studio Code":
@@ -21,13 +24,13 @@
     - /url: https://aws.amazon.com/rds/aurora/
   - link "26. AWS DynamoDB":
     - /url: https://aws.amazon.com/dynamodb/
-  - link "27. AWS Elastic Container Registry":
+  - link "27. AWS Elastic ContainerRegistry":
     - /url: https://aws.amazon.com/ecr/
   - link "28. AWS Lambda":
     - /url: https://aws.amazon.com/lambda/
   - link "29. AWS Parameter Store":
     - /url: https://aws.amazon.com/systems-manager/
-  - link "30. AWS Relational Database Service (RDS)":
+  - link "30. AWS RelationalDatabase Service (RDS)":
     - /url: https://aws.amazon.com/rds/
   - link "31. AWS S3":
     - /url: https://aws.amazon.com/s3/
@@ -50,7 +53,7 @@
   - text: MAINTAIN
   - link "39. AWS Athena":
     - /url: https://aws.amazon.com/athena/
-  - link "40. AWS Elastic Kubernetes Service":
+  - link "40. AWS Elastic KubernetesService":
     - /url: https://aws.amazon.com/eks/
   - link "41. AWS Glue":
     - /url: https://aws.amazon.com/glue/
@@ -59,7 +62,7 @@
   - link "43. Splunk":
     - /url: https://www.splunk.com/
   - text: "Languages & Frameworks: EXPERIENCED"
-  - link "1. AWS Lambda Powertools (Python)":
+  - link "1. AWS Lambda Powertools(Python)":
     - /url: https://docs.powertools.aws.dev/lambda/python/latest/
   - link "2. Bash":
     - /url: https://www.gnu.org/software/bash/
